@@ -1,0 +1,369 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  
+}
+
+html {
+  
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+/*Nav bar*/
+
+#nav {
+  width: 100%;
+  height: 9rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+
+  background: #0f0e3d;
+  color: white;
+}
+
+#nav .navbar {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav .navbar h1 {
+  font-size: 4rem;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#nav .navbar h1 strong {
+  color: rgba(0, 0, 255, 0.733);
+}
+
+#nav .navbar ul {
+  display: flex;
+}
+#nav .navbar ul li {
+  margin-right: 2rem;
+  font-size: 2rem;
+  transition: 0.5s;
+  font-weight: bold;
+  color: White;
+}
+
+#nav .navbar ul li:hover {
+  cursor: pointer;
+  color: rgba(0, 0, 255, 0.733);
+}
+
+/*Header*/
+#header {
+  width: 100%;
+  height: 70vh;
+
+  background: #0f0e3d;
+  color: white;
+
+  border-radius: 0 0 0 15rem;
+}
+
+#header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header-container .text {
+  margin: 18rem 8rem 0 0;
+  width: 40rem;
+  color: #dedede;
+  text-align: start;
+}
+
+#header-container .text h2 {
+  font-size: 5rem;
+}
+
+#header-container .text h3 {
+  font-size: 2.5rem;
+}
+
+#header-container .text p {
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+
+#header-container .photo {
+  width: 50rem;
+  height: auto;
+
+  margin-top: 18rem;
+}
+
+#header-container .social {
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+  top: 19rem;
+  left: 2rem;
+}
+
+#header-container .sociais {
+  margin-top: 2rem;
+  height: 4rem;
+  transition: 0.8s all;
+}
+
+#header-container .sociais:hover {
+  transform: scale(1.4);
+}
+
+#header-container .button {
+  position: absolute;
+  bottom: 35rem;
+  left: 20rem;
+}
+
+#header-container .button a {
+  color: white;
+  font-size: 3rem;
+  padding: 2rem;
+
+  border: 1px solid White;
+  border-radius: 1.5rem;
+
+  transition: 0.5s all;
+}
+
+#header-container .button a:hover {
+  background: rgba(40, 69, 102, 0.671);
+
+  box-shadow: 8px 6px 32px -2px #dfcece;
+}
+
+/*Cards My services*/
+#services {
+  width: 100%;
+}
+#services .services-container {
+  width: 80%;
+  height: 65vh;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#services .text h3 {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+#services .text p {
+  text-align: center;
+  margin: auto;
+  max-width: 100ch;
+  font-size: 1.8rem;
+  color: black;
+  font-weight: 400;
+}
+
+#services .card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+#services .card p {
+  font-size: 1.5rem;
+  max-width: 60ch;
+  text-align: center;
+}
+
+#services .cards {
+  height: 30rem;
+  width: 33%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  background: white;
+  border: 3px solid #dede;
+  color: black;
+
+  box-shadow: 15px 10px 45px -2px #ddd7d7;
+}
+
+#services .card h3 {
+  font-size: 2rem;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+#services .cards img {
+  height: 8rem;
+  margin-bottom: 1rem;
+}
+
+/*Skills*/
+#skills {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 70vh;
+  margin-top: 8rem;
+}
+
+#skills .text h2,
+#skills .text p {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+#skills .text p {
+  font-size: 2rem;
+  font-weight: 400;
+  max-width: 100ch;
+}
+
+#skills .skills-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: 5rem;
+}
+
+#skills .habilidades {
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+
+#skills .lvlbar .porcent {
+  margin: 0 0 5rem 0;
+}
+
+#skills .lvlbar span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#skills .lvlbar .porcent {
+  height: 1rem;
+  width: 50%;
+  background: #bfbfc7;
+  border-radius: 1rem;
+}
+
+#skills .porcentlvl.js {
+  width: 10%;
+  height: 1rem;
+  background: rgb(19, 23, 246);
+  border-radius: 1rem;
+}
+
+#skills .porcentlvl {
+  width: 55%;
+  height: 1rem;
+  background: rgb(19, 23, 246);
+  border-radius: 1rem;
+}
+
+#skills .photo img {
+  width: auto;
+  height: 35rem;
+
+  position: absolute;
+  right: 10rem;
+  top: 140rem;
+}
+
+/*Projects*/
+
+#projects .title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#projects .title h3 {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+}
+
+#projects .work-container {
+  height: 60vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#projects .works {
+  margin: 0 1rem;
+}
+
+#projects .works img {
+  height: 25rem;
+  width: auto;
+}
+
+#projects .works h3,
+#projects .works p {
+  font-size: 1.5rem;
+}
+
+#projects .works img:hover {
+  cursor: pointer;
+}
+
+
+/*Footeer*/
+
+#footer {
+
+  height: 10rem;
+  background: #0f0e3d;
+  border-radius: 0 5rem 0 0;
+}
+
+#footer .footer-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#footer .footer-container h3 {
+
+  color: white;
+
+
+}
